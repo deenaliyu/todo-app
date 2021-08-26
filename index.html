@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Todo app</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section class="container-fluid">
+    <div class="head">
+      <h4>TODO</h4>
+      <img src="./images/icon-sun.svg" alt="" class="sun" onclick="changeTheme();">
+      <img src="./images/icon-moon.svg" alt="" class="moon" onclick="changeTheme();">
+    </div>
+    <div class="content1 mt-4">
+      <div class="form-check">
+        <input class="form-check-input create" type="checkbox" value="" id="check0" onclick="createNew()">
+        <input type="text" class="form-control newTodo" placeholder="Create a new todo" style="width:200px">
+      </div>
+    </div>
+    <div class="sendHere">
+      <div class="content2 mt-3">
+        <div class="form-check">
+          <input class="form-check-input checked" type="checkbox" checked value="" id="check1" onclick="checkAll()">
+          <label class="form-check-label lbl" for="check1">Complete online javaScript course</label>
+        </div>
+      </div>
+      <hr class="line">
+      <div class="content3" draggable="true">
+        <div class="form-check">
+          <input class="form-check-input checked" type="checkbox" value="" id="check2" onclick="checkAll();">
+          <label class="form-check-label lbl" for="check2">Jog around the park 3x</label>
+          <img src="./images/icon-cross.svg" style="float: right; cursor: pointer;" alt="" onclick="deleted()" class="cancel">
+        </div>
+      </div>
+      <hr class="line">
+      <div class="content3" draggable="true">
+        <div class="form-check">
+          <input class="form-check-input checked" type="checkbox" value="" id="check3" onclick="checkAll();">
+          <label class="form-check-label lbl" for="check3">10 minutes meditation</label>
+          <img src="./images/icon-cross.svg" style="float: right; cursor: pointer;" alt="" onclick="deleted()" class="cancel">
+        </div>
+      </div>
+      <hr class="line">
+      <div class="content3" draggable="true">
+        <div class="form-check">
+          <input class="form-check-input checked" type="checkbox" value="" id="check4" onclick="checkAll();">
+          <label class="form-check-label lbl" for="check4">Read for 1 hour</label>
+          <img src="./images/icon-cross.svg" style="float: right; cursor: pointer;" alt="" onclick="deleted()" class="cancel">
+        </div>
+      </div>
+      <hr class="line">
+      <div class="content3" draggable="true">
+        <div class="form-check">
+          <input class="form-check-input checked" type="checkbox" value="" id="check5" onclick="checkAll();">
+          <label class="form-check-label lbl" for="check5">Pick up groceries</label>
+          <img src="./images/icon-cross.svg" style="float: right; cursor: pointer;" alt="" onclick="deleted()" class="cancel">
+        </div>
+      </div>
+      <hr class="line">
+      <div class="content3" draggable="true">
+        <div class="form-check">
+          <input class="form-check-input checked" type="checkbox" value="" id="check6" onclick="checkAll();">
+          <label class="form-check-label lbl" for="check6">Complete Todo App on FrontendMentor</label>
+          <img src="./images/icon-cross.svg" style="float: right; cursor: pointer;" alt="" onclick="deleted()" class="cancel">
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="content4 pt-2">
+      <p>5 minutes left</p>
+      <div class="all">
+        <p style="color: hsl(220, 98%, 61%);">All</p>
+        <p>Acive</p>
+        <p onclick="onlyClicked();">Completed</p>
+      </div>
+      <p onclick="clearAll();">Clear Completed</p>
+    </div>
+
+    <p style="text-align: center; margin-top: 1.5rem; font-size: 14px; color:hsl(236, 9%, 61%) ;">Drag and drop to
+      reorder list</p>
+  </section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Aliyu Nurudeen</a>.
+  </div>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

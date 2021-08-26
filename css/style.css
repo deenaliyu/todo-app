@@ -1,0 +1,425 @@
+.attribution { font-size: 18px; text-align: center; font-weight: bolder; margin-top: 24rem; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+html{
+    min-height: 100%;
+  }
+  @font-face {
+    font-family: face;
+    src: url("../font/josefin-sans-v17-latin-regular.woff");
+  }
+ body{
+   font-family: face;
+   Font-size: 12px;
+   background-color:hsl(235, 21%, 11%);
+ }
+
+  .moon{
+  display: none;
+}
+ .sun{
+  display: flex;
+}
+
+ .container-fluid{
+   background: url('../images/bg-desktop-dark.jpg');
+   height: 40vh;
+   padding-top: 8em;
+   color: hsl(233, 28%, 83%);
+ }
+.head{
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin: auto;
+}
+.head h4{
+  color: white;
+  font-size: 30px;
+  letter-spacing: 10px;
+  font-weight: bolder;
+}
+.head img{
+  width: 5%;
+  height: 10%;
+}
+.content1{
+  margin: auto;
+  width:500px;
+  background-color: hsl(235, 24%, 19%);
+  padding: 10px;
+  border-radius: 5px;
+}
+.content1 .form-control{
+  margin-left:2rem !important;
+  height: 2em;
+  background-color: hsl(235, 24%, 19%) !important;
+  border: none;
+  color: white;
+  font-size: 18px;
+}
+.content1 .form-control:focus{
+  box-shadow: none !important;
+  outline: 0 !important;
+}
+
+.content1 .form-check-label{
+  margin-left:2rem !important;
+  color: white;
+  font-size: 18px;
+}
+hr{
+  margin:auto !important; 
+  color:hsl(234, 39%, 85%) !important;
+  width: 500px;
+}
+
+.content2{
+  margin: auto;
+  width:500px;
+  background-color: hsl(235, 24%, 19%);
+  padding: 10px;
+  border-radius: 5px 5px 0px 0px;
+}
+.content2 .form-check-label{
+  margin-left:2rem !important;
+  color: hsl(234, 11%, 52%);
+  font-size: 18px;
+  text-decoration: line-through;
+}
+.dragging{
+  opacity: .5;
+}
+.form-check-label{
+  cursor: pointer;
+}
+.form-check-label:hover{
+  color:hsl(236, 33%, 92%) !important;
+}
+.content3{
+  margin: auto;
+  width:500px;
+  background-color: hsl(235, 24%, 19%);
+  padding: 10px;
+  border-radius: 0px;
+  color: hsl(233, 28%, 83%);
+  cursor: move;
+}
+.content3 .form-check-label{
+  margin-left:2rem !important;
+  color: hsl(234, 39%, 85%);
+  font-size: 18px;
+}
+.checke{
+  text-decoration: line-through;
+}
+.content4{
+  display: flex;
+  margin: auto;
+  width:500px;
+  background-color: hsl(235, 24%, 19%);
+  padding: 5px;
+  border-radius: 0px;
+  color: hsl(234, 11%, 52%);
+  justify-content: space-between;
+  font-size: 12px;
+  border-bottom-right-radius: 5px; 
+  border-bottom-left-radius: 5px;
+}
+.content4 .all{
+  display: flex;
+  justify-content:space-between
+}
+.all p{
+  margin-right: 1rem;
+}
+.content4 p:hover{
+  color: hsl(233, 28%, 83%);
+  cursor: pointer;
+}
+
+
+body.dark  {
+  background-color:  hsl(0, 0%, 98%)
+}
+body.dark .moon{
+  display: flex;
+}
+body.dark .sun{
+  display: none;
+}
+ body.dark .container-fluid{
+  background: url('../images/bg-desktop-light.jpg');
+  height: 40vh;
+  padding-top: 8em;
+  color: hsl(233, 28%, 83%);
+}
+ body.dark .head{
+ display: flex;
+ justify-content: space-between;
+ width: 500px;
+ margin: auto;
+}
+body.dark .head h4{
+ color: white;
+ font-size: 30px;
+ letter-spacing: 10px;
+}
+body.dark .head img{
+ width: 5%;
+ height: 10%;
+}
+body.dark .content1{
+ margin: auto;
+ width:500px;
+ background-color: hsl(0, 0%, 98%);
+ padding: 10px;
+ border-radius: 5px;
+}
+body.dark .content1 .form-control{
+ margin-left:2rem !important;
+ height: 2em;
+ background-color: hsl(0, 0%, 98%) !important;
+ border: none;
+ color: hsl(235, 19%, 35%);
+ font-size: 18px;
+}
+body.dark .content1 .form-control:focus{
+ box-shadow: none !important;
+ outline: 0 !important;
+}
+
+ body.dark .content1 .form-check-label{
+ margin-left:2rem !important;
+ color: white;
+ font-size: 18px;
+}
+ body.dark hr{
+ margin:auto !important; 
+ color:hsl(234, 39%, 85%) !important;
+ width: 500px;
+}
+
+ body.dark .content2{
+ margin: auto;
+ width:500px;
+ background-color: hsl(0, 0%, 98%) !important;
+ padding: 10px;
+ border-radius: 5px 5px 0px 0px;
+ -webkit-box-shadow: 0 1.5px 4px rgb(0 0 0 / 15%);
+  -moz-box-shadow: 0 1.5px 4px rgba(0, 0, 0, .15);
+  box-shadow: 0 1.5px 4px rgb(0 0 0 / 15%);
+}
+body.dark .content2 .form-check-label{
+ margin-left:2rem !important;
+ color: hsl(233, 11%, 84%);
+ font-size: 18px;
+ text-decoration: line-through;
+}
+body.dark .form-check-label{
+ cursor: pointer;
+}
+.form-check-label:hover{
+ color:hsl(236, 33%, 92%) !important;
+}
+body.dark .content3{
+ margin: auto;
+ width:500px;
+ background-color: hsl(0, 0%, 98%) !important;
+ padding: 10px;
+ border-radius: 0px;
+ color: hsl(233, 28%, 83%);
+ -webkit-box-shadow: 0 1.5px 4px rgb(0 0 0 / 15%);
+  -moz-box-shadow: 0 1.5px 4px rgba(0, 0, 0, .15);
+  box-shadow: 0 1.5px 4px rgb(0 0 0 / 15%);
+}
+body.dark .content3 .form-check-label{
+ margin-left:2rem !important;
+ color: hsl(235, 19%, 35%);
+ font-size: 18px;
+}
+
+body.dark .content4{
+ display: flex;
+ margin: auto;
+ width:500px;
+ background-color: hsl(0, 0%, 98%) !important;
+ padding: 5px;
+ border-radius: 0px;
+ color: hsl(236, 9%, 61%);
+ justify-content: space-between;
+ font-size: 12px;
+ border-bottom-right-radius: 5px; 
+ border-bottom-left-radius: 5px;
+ -webkit-box-shadow: 0 1.5px 4px rgb(0 0 0 / 15%);
+  -moz-box-shadow: 0 1.5px 4px rgba(0, 0, 0, .15);
+  box-shadow: 0 1.5px 4px rgb(0 0 0 / 15%);
+}
+body.dark .content4 .all{
+ display: flex;
+ justify-content:space-between
+}
+body.dark .all p{
+ margin-right: 1rem;
+}
+body.dark .content4 p:hover{
+ color: hsl(235, 19%, 35%);
+ font-weight: bolder;
+ cursor: pointer;
+}
+
+body.dark .container-fluids{
+  background: url('../images/bg-desktop-light.jpg');
+  height: 40vh;
+  padding-top: 8em;
+  color: hsl(233, 28%, 83%);
+}
+
+@media (max-width: 375px){
+
+  .attribution { font-size: 14px; text-align: center; font-weight: bolder; margin-top: 20rem; }
+
+  .container-fluid{
+    background: url('../images/bg-mobile-dark.jpg');
+    height: 40vh;
+    padding-top: 8em;
+    color: hsl(233, 28%, 83%);
+  }
+ .head{
+   display: flex;
+   justify-content: space-between;
+   width: auto;
+   margin: auto;
+ }
+ .content1{
+  margin: auto;
+  width:auto;
+  background-color: hsl(235, 24%, 19%);
+  padding: 10px;
+  border-radius: 5px;
+}
+hr{
+  margin:auto !important; 
+  color:hsl(234, 39%, 85%) !important;
+  width: auto;
+}
+
+.content2{
+  margin: auto;
+  width:auto;
+  background-color: hsl(235, 24%, 19%);
+  padding: 10px;
+  border-radius: 5px 5px 0px 0px;
+}
+.content2 .form-check-label{
+  margin-left:.7rem !important;
+  color: hsl(234, 11%, 52%);
+  font-size: 18px;
+  text-decoration: line-through;
+}
+
+.content3{
+  margin: auto;
+  width:auto;
+  background-color: hsl(235, 24%, 19%);
+  padding: 10px;
+  border-radius: 0px;
+  color: hsl(233, 28%, 83%);
+  cursor: move;
+}
+
+.content3 .form-check-label{
+  margin-left:.7rem !important;
+  color: hsl(234, 39%, 85%);
+  font-size: 15px;
+}
+
+.cancel{
+  display: none;
+}
+
+.content4{
+  display: flex;
+  margin: auto;
+  width:auto;
+  background-color: hsl(235, 24%, 19%);
+  padding: 5px;
+  border-radius: 0px;
+  color: hsl(234, 11%, 52%);
+  justify-content: space-between;
+  font-size: 12px;
+  border-bottom-right-radius: 5px; 
+  border-bottom-left-radius: 5px;
+}
+body.dark.head{
+ display: flex;
+ justify-content: space-between;
+ width: auto;
+ margin: auto;
+}
+body.dark.content1{
+margin: auto;
+width:auto;
+background-color: hsl(235, 24%, 19%);
+padding: 10px;
+border-radius: 5px;
+}
+hr{
+margin:auto !important; 
+color:hsl(234, 39%, 85%) !important;
+width: auto;
+}
+
+body.dark.content2{
+margin: auto;
+width:auto;
+background-color: hsl(235, 24%, 19%);
+padding: 10px;
+border-radius: 5px 5px 0px 0px;
+}
+body.dark.content2 .form-check-label{
+margin-left:.7rem !important;
+color: hsl(234, 11%, 52%);
+font-size: 18px;
+text-decoration: line-through;
+}
+
+body.dark.content3{
+margin: auto;
+width:auto;
+background-color: hsl(235, 24%, 19%);
+padding: 10px;
+border-radius: 0px;
+color: hsl(233, 28%, 83%);
+cursor: move;
+}
+
+body.dark.content3 .form-check-label{
+margin-left:.7rem !important;
+color: hsl(234, 39%, 85%);
+font-size: 15px;
+}
+
+
+body.dark.content4{
+display: flex;
+margin: auto;
+width:auto;
+background-color: hsl(235, 24%, 19%);
+padding: 5px;
+border-radius: 0px;
+color: hsl(234, 11%, 52%);
+justify-content: space-between;
+font-size: 12px;
+border-bottom-right-radius: 5px; 
+border-bottom-left-radius: 5px;
+}
+
+body.dark .container-fluids{
+    background: url('../images/bg-mobile-light.jpg');
+    height: 40vh;
+    padding-top: 8em;
+    color: hsl(233, 28%, 83%);
+  }
+
+
+}
